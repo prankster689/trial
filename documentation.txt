@@ -1,0 +1,24 @@
+The main class used in this project is the file class (import java.io.File;).
+The File class is Java’s representation of a file or directory path name. Because file and directory names have different formats on different platforms, a simple string is not adequate to name them. The File class contains several methods for working with the path name, deleting and renaming files, creating new directories, listing the contents of a directory, and determining several common attributes of files and directories.
+
+File file = new File(dirpath); is used to create a new directory path where we want to add,delete or search files from.
+
+ String[] fileList = file.list(); is used to list all the files from the directory and store in a string array and can be iterated using a for or foreach loop.
+
+ File file = new File(fullpath); assigning a directory path to a file object.
+
+file.createNewFile() is used to create a new file (use the full directory path plus the filename you want to add).
+
+f.delete() is a method used to delete a specfied file.
+
+f.exists() is a method to check if the file exists in a specified directory.
+
+note:for all the methods we can use a try and catch block to print the stack trace of errors.
+
+
+Make use of a scanner to input user entry for a displayed menu within a while loop to iterate the menu
+
+use switch to run specific cases according to user input.
+
+use system.exit(0) to exit from the application.
+
